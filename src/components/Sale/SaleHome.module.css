@@ -1,0 +1,193 @@
+.container{
+    padding: 80px 40px;
+}
+
+.buttonAdd{
+    position: absolute;
+    top: 210px;
+    width: 100%;
+    display: none;
+}
+
+.element:hover{
+    .buttonAdd{
+        display: block;
+    }
+}
+
+.had{
+    display: flex;
+justify-content: space-between;
+}
+
+.had h1{
+    font-size: 64px;
+   color: rgba(40, 40, 40, 1);
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.had button{
+    border: 1px solid rgba(221, 221, 221, 1);
+    background: none;
+    color: rgba(139, 139, 139, 1);
+    font-size: 16px;
+    font-weight: 500;
+    width: 140px;
+    height: 36px;
+    border-radius: 6px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.had button:hover {
+    background: rgba(241, 243, 244, 1);
+    color: rgba(139, 139, 139, 1);
+} 
+
+.had button:checked {
+    background: rgba(221, 221, 221, 1);
+    color: rgba(40, 40, 40, 1);
+}
+
+.had button::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 50%; 
+    left: -800px; 
+    width: 800px; 
+    height: 1px; 
+    background-color: rgba(221, 221, 221, 1) 
+}
+
+.imegesCont{
+    display: flex;
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.element{
+    position: relative;
+    border-radius: 12px;
+    border: 1px solid rgba(221, 221, 221, 1)
+}
+
+.imegesCont img{
+    max-width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+.imegesCont h3{
+    text-align: center;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+font-size: 20px;
+font-weight: 500;
+line-height: 26px;
+margin-top: 16px;
+color: rgba(40, 40, 40, 1);
+}
+
+.priceCont{
+    display: flex;
+    margin: 16px 32px;
+}
+
+.priceCont h2{
+font-size: 40px;
+font-weight: 600;
+line-height: 44px;
+text-align: left;
+color: rgba(40, 40, 40, 1);
+
+}
+
+.priceCont p{
+font-size: 20px;
+font-weight: 500;
+line-height: 26px;
+text-align: left;
+text-decoration-line: line-through;
+color: rgba(139, 139, 139, 1);
+padding: 16px;
+
+}
+
+.discountBadge{
+    background: rgba(13, 80, 255, 1);
+    border-radius: 6px;
+    max-width: 70px;
+    font-family: Montserrat;
+font-size: 20px;
+font-weight: 600;
+line-height: 26px;
+letter-spacing: 0.03em;
+text-align: left;
+color:rgba(255, 255, 255, 1);
+padding: 4px 8px;
+position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+@media (max-width: 1025px){
+.had h1{
+    font-size: 58px;
+}
+
+.imegesCont h3{
+    font-size: 16px;
+}
+}
+
+@media (max-width: 769px){
+    .had h1{
+        font-size: 46px;
+    }
+    .had button{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .had button::before{
+        left: -300px; 
+        width: 300px; 
+    }
+    .imegesCont {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 426px){
+    .had h1{
+        font-size: 34px;
+    }
+    .had button{
+        font-size: 12px;
+        margin-top: 20px;
+        width: 100px;
+
+    }
+    .had button::before{
+        left: -150px; 
+        width: 150px; 
+    }
+
+    .priceCont h2{
+        font-size: 32px;
+    }
+
+    .priceCont p{
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .priceCont{
+        margin: 8px 16px;
+    }
+
+
+}

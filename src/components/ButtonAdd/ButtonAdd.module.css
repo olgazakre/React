@@ -1,0 +1,24 @@
+.addButton{
+    background: rgba(13, 80, 255, 1);
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    width: 90%;
+    margin: 0 16px;
+    padding: 16px;
+}
+
+.addButton:hover{
+    background: rgba(40, 40, 40, 1);
+}
+
+.addButton.success{
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid;
+    color: rgba(40, 40, 40, 1);
+    ;
+}

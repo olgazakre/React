@@ -1,0 +1,44 @@
+.List{
+    display: flex;
+    gap: 16px;
+}
+
+.List li {
+    position: relative;
+    border: 1px solid rgba(221, 221, 221, 1);
+    border-radius: 6px;
+    padding: 8px 16px;
+    width: fit-content;
+    
+}
+.List a{
+    color: rgba(139, 139, 139, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+}
+.List li::before {
+    content: '';
+    position: absolute;
+    left: -17px;
+    width: 16px;
+    border-bottom: 1px solid rgba(221, 221, 221, 1);
+    top: 50%;
+}
+.List li:first-of-type::before {
+    content: none;
+}
+.List li:last-of-type a {
+color: rgba(40, 40, 40, 1)}
+
+@media (max-width: 426px){
+    .List{
+        display: grid;
+        gap: 8px;
+    }
+
+    .List li::before {
+       display: none;
+    }
+}

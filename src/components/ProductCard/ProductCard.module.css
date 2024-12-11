@@ -1,0 +1,113 @@
+.buttonAdd{
+    position: absolute;
+    top: 210px;
+    width: 100%;
+    display: none;
+}
+
+.element{
+    position: relative;
+    border-radius: 12px;
+    border: 1px solid rgba(221, 221, 221, 1);
+    max-height: 425px;
+}
+
+.element:hover{
+    .buttonAdd{
+        display: block;
+    }
+}
+
+.element img{
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    height: 284px;
+    object-fit: cover;
+}
+
+.element h3{
+    text-align: center;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+font-size: 20px;
+font-weight: 500;
+line-height: 26px;
+margin-top: 16px;
+color: rgba(40, 40, 40, 1);
+}
+
+.priceCont{
+    display: flex;
+    margin: 16px 32px;
+}
+
+.priceCont h2{
+font-size: 40px;
+font-weight: 600;
+line-height: 44px;
+text-align: left;
+color: rgba(40, 40, 40, 1);
+
+}
+
+.priceCont p{
+font-size: 20px;
+font-weight: 500;
+line-height: 26px;
+text-align: left;
+text-decoration-line: line-through;
+color: rgba(139, 139, 139, 1);
+padding: 16px;
+
+}
+
+.discountBadge{
+    background: rgba(13, 80, 255, 1);
+    border-radius: 6px;
+    max-width: 70px;
+    font-family: Montserrat;
+font-size: 20px;
+font-weight: 600;
+line-height: 26px;
+letter-spacing: 0.03em;
+text-align: left;
+color:rgba(255, 255, 255, 1);
+padding: 4px 8px;
+position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+
+@media (max-width: 1025px){
+
+    .element h3{
+        font-size: 16px;
+    }
+    
+    }
+    
+    
+    @media (max-width: 426px){
+    
+        .priceCont h2{
+            font-size: 32px;
+        }
+    
+        .priceCont p{
+            font-size: 14px;
+            padding: 8px;
+        }
+    
+        .priceCont{
+            margin: 8px 16px;
+        }
+
+        .element{
+            margin-bottom: 10px;
+        }
+    
+    
+    }

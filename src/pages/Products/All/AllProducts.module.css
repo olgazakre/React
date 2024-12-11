@@ -1,0 +1,52 @@
+.container{
+    padding: 40px;
+}
+
+.had h1{
+    font-size: 64px;
+   color: rgba(40, 40, 40, 1);
+    font-weight: 700;
+    line-height: 70px;
+    margin-top: 40px;
+}
+
+
+.imegesCont{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px;
+    margin-top: 40px;
+}
+
+@media (max-width: 1025px){
+.had h1{
+    font-size: 58px;
+}
+
+.imegesCont{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+@media (max-width: 769px){
+    .had h1{
+        font-size: 46px;
+    }
+
+    .imegesCont {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 426px){
+    .had h1{
+        font-size: 34px;
+    }
+
+    .imegesCont{
+        display: block;
+        
+    }
+
+}
