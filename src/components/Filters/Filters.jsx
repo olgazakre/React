@@ -27,7 +27,7 @@ export default function ProductFilters({
           value={priceFrom}
           onChange={handleInputChange}
           min="0"
-          step="0.01"
+          step="1"
           placeholder="from"
         />
         <input
@@ -37,7 +37,7 @@ export default function ProductFilters({
           value={priceTo}
           onChange={handleInputChange}
           min="0"
-          step="0.01"
+          step="1"
           placeholder="to"
         />
       </div>
